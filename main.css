@@ -1,0 +1,189 @@
+*{
+    padding:0;
+    margin:0;
+    color:#ffffff;
+}
+body{
+    background:#573428;
+}
+.email_section, .password_section, .submits_section, .container{
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    width:40vw;
+}
+.container{
+    border: 2px solid #000000;
+    margin:20vh auto;
+    padding:30px;
+}
+.email_label, .title_login, .password_label{
+    text-align:center;
+}
+.title_login{
+    border-bottom:2px solid #ffffff;
+    font-size:3vw;
+}
+.email_input, .password_input{
+    background:transparent;
+    width:50%;
+    border:0;
+    border-bottom:2px solid #ffffff;
+    padding:10px;
+    margin:auto;
+}
+.login_btn, .register_btn{
+    width:50%;
+    margin:5px auto;
+    border:2px solid #ffffff;
+    padding:10px;
+    font-size:18px;
+}
+.login_btn{
+    background:#1f172a;
+}
+.register_btn{
+    background:#153438;
+}
+.page-main > button {
+    color:#000000;
+}
+.logOut, .nickname{
+    position:absolute;
+}
+.logOut{
+    background:#000000;
+    border:0;
+    padding:10px;
+    top:50%;
+    right:0;
+    transform:translateY(-50%);
+}
+.hel{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    font-size:25px;
+    background:#fff;
+    border:0;
+    padding:50px;
+    z-index: 2;
+}
+.prefix{
+    top:65%;
+    animation:2s preFix;
+}
+.battle_section{
+    width:80vw;
+    height:80vh;
+    border:2px solid #000000;
+    background-image:linear-gradient(90deg, #361d18 0%, #573428 100%);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    z-index: 3;
+}
+@keyframes preFix{
+    from{
+        top:50%;
+    }to{
+        top:65%;
+    }
+}
+.left_section, ._right_section{
+    width:50%;
+    height:100%;
+    float:left;
+    box-sizing: border-box;
+}
+.left_section{
+    border-right:2px solid red;
+}
+.attBtn0, .attBtn1, .attBtn2, .attBtn3{
+    position:absolute;
+    top:15vh;
+    margin:10px;
+}
+.attBtn0{
+    left:20%;
+    animation:2s animationAtt0;
+}
+.attBtn1{
+    left:40%;
+    animation:2s animationAtt1;
+}
+.attBtn2{
+    left:60%;
+    animation:2s animationAtt2;
+}
+.attBtn3{
+    left:80%;
+    animation:2s animationAtt3;
+}
+@keyframes animationAtt0{
+    from{
+        left:50%;
+        top:50%;
+    }to{
+        left:20%;
+    }
+}
+@keyframes animationAtt1{
+    from{
+        left:50%;
+        top:50%;
+    }to{
+        left:40%;
+    }
+}
+@keyframes animationAtt2{
+    from{
+        left:50%;
+        top:50%;
+    }to{
+        left:60%;
+    }
+}
+@keyframes animationAtt3{
+    from{
+        left:50%;
+        top:50%;
+    }to{
+        left:80%;
+    }
+}
+.ui{
+    border-top:2px solid #ffffff;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100vw;
+    height:10%;
+}
+.bar{
+    box-sizing: border-box;
+    padding-top:50px;
+    height:90%;
+    width:10vw;
+    position:absolute;
+    left:0;
+    top:0;
+    display:flex;
+    flex-direction: column;
+}
+.nickname{
+    font-size:28px;
+    box-sizing: border-box;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    text-align:center;
+}
+.fas, .fab, .far{
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:50px;
+}
